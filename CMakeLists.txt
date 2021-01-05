@@ -80,7 +80,7 @@ target_include_directories(
 )
 
 ## add debug view definition file for msvc (natvis)
-if (MSVC)
+if (WIN32)
     set(NLOHMANN_ADD_NATVIS TRUE)
     set(NLOHMANN_NATVIS_FILE "nlohmann_json.natvis")
     target_sources(
